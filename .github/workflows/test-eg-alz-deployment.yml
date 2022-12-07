@@ -6,7 +6,7 @@ on: [workflow_dispatch]
 env:
   ManagementGroupPrefix: "eg-test"
   TopLevelManagementGroupDisplayName: "EG-Azure Landing Zones"
-  Location: "westeu"
+  Location: "westeurope"
   LoggingSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   LoggingResourceGroupName: "alz-logging"
   HubNetworkSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"

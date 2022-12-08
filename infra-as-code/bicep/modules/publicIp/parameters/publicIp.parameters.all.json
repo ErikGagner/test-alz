@@ -6,7 +6,7 @@
             "value": "eastus"
         },
         "parPublicIpName": {
-            "value": "alz"
+            "value": "eg-test"
         },
         "parPublicIpSku": {
             "value": {

@@ -47,7 +47,7 @@ outRolesSecurityOperationsRoleId | string |
     },
     "parameters": {
         "parAssignableScopeManagementGroupId": {
-            "value": "alz"
+            "value": "eg-test"
         },
         "parTelemetryOptOut": {
             "value": false

@@ -102,7 +102,7 @@ outDecommissionedManagementGroupName | string |
     },
     "parameters": {
         "parTopLevelManagementGroupPrefix": {
-            "value": "alz"
+            "value": "eg-test"
         },
         "parTopLevelManagementGroupDisplayName": {
             "value": "Azure Landing Zones"

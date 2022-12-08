@@ -6,7 +6,7 @@
         "value": "westeurope"
       },
       "parTopLevelManagementGroupPrefix": {
-        "value": "alz"
+        "value": "eg-test"
       },
       "parPeeredVnetSubscriptionId": {
         "value": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -31,7 +31,7 @@
       },
       "parDisableBgpRoutePropagation": {
         "value": false
-      },      
+      },
       "parSpoketoHubRouteTableName": {
         "value": "rtb-spoke-to-hub"
       },

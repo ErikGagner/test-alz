@@ -8,7 +8,7 @@ Parameter name | Required | Description
 -------------- | -------- | -----------
 parTopLevelManagementGroupPrefix | No       | Prefix for the management group hierarchy. DEFAULT VALUE = alz
 parLogAnalyticsWorkSpaceAndAutomationAccountLocation | No       | The region where the Log Analytics Workspace & Automation Account are deployed. DEFAULT VALUE = chinaeast2
-parLogAnalyticsWorkspaceResourceID | No       | Log Analytics Workspace Resource ID. - DEFAULT VALUE: Empty String 
+parLogAnalyticsWorkspaceResourceID | No       | Log Analytics Workspace Resource ID. - DEFAULT VALUE: Empty String
 parLogAnalyticsWorkspaceLogRetentionInDays | No       | Number of days of log retention for Log Analytics Workspace. - DEFAULT VALUE: 365
 parAutomationAccountName | No       | Automation account name. - DEFAULT VALUE: alz-automation-account
 parMsDefenderForCloudEmailSecurityContact | No       | An e-mail address that you want Microsoft Defender for Cloud alerts to be sent to.
@@ -35,7 +35,7 @@ The region where the Log Analytics Workspace & Automation Account are deployed. 
 
 ![Parameter Setting](https://img.shields.io/badge/parameter-optional-green?style=flat-square)
 
-Log Analytics Workspace Resource ID. - DEFAULT VALUE: Empty String 
+Log Analytics Workspace Resource ID. - DEFAULT VALUE: Empty String
 
 ### parLogAnalyticsWorkspaceLogRetentionInDays
 
@@ -88,7 +88,7 @@ Set Parameter to true to Opt-out of deployment telemetry
     },
     "parameters": {
         "parTopLevelManagementGroupPrefix": {
-            "value": "alz"
+            "value": "eg-test"
         },
         "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
             "value": "chinaeast2"

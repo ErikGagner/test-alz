@@ -150,7 +150,6 @@ outAutomationAccountId | string |
                 "AzureActivity",
                 "ChangeTracking",
                 "Security",
-                "SecurityInsights",
                 "ServiceMap",
                 "SQLAdvancedThreatProtection",
                 "SQLVulnerabilityAssessment",

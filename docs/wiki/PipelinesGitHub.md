@@ -20,7 +20,7 @@ env:
   TopLevelManagementGroupDisplayName: "Azure Landing Zones"
   Location: "eastus"
   LoggingSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-  LoggingResourceGroupName: "alz-logging"
+  LoggingResourceGroupName: "eg-alz-logging"
   HubNetworkSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   HubNetworkResourceGroupName: "Hub_Networking_POC"
   RoleAssignmentManagementGroupId: "alz-platform"
@@ -59,7 +59,7 @@ jobs:
           parameters: infra-as-code/bicep/modules/policy/definitions/parameters/customPolicyDefinitions.parameters.all.json
           deploymentName: create_policy_defs-${{ env.runNumber }}
           failOnStdErr: false
-        
+
       - name: Deploy Custom Role Definitions
         id: create_rbac_roles
         uses: azure/arm-deploy@v1

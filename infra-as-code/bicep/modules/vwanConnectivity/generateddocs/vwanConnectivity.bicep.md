@@ -9,7 +9,7 @@ Parameter name | Required | Description
 parLocation    | No       | Region in which the resource group was created. Default: {resourceGroup().location}
 parCompanyPrefix | No       | Prefix value which will be prepended to all resource names. Default: alz
 parVirtualHubAddressPrefix | No       | The IP address range in CIDR notation for the vWAN virtual Hub to use. Default: 10.100.0.0/23
-parAzFirewallTier | No       | Azure Firewall Tier associated with the Firewall to deploy. Default: Standard
+parAzFirewallTier | No       | Azure Firewall Tier associated with the Firewall to deploy. Default: Standard 
 parVirtualHubEnabled | No       | Switch to enable/disable Virtual Hub deployment. Default: true
 parVpnGatewayEnabled | No       | Switch to enable/disable VPN Gateway deployment. Default: false
 parExpressRouteGatewayEnabled | No       | Switch to enable/disable ExpressRoute Gateway deployment. Default: false
@@ -61,7 +61,7 @@ The IP address range in CIDR notation for the vWAN virtual Hub to use. Default: 
 
 ![Parameter Setting](https://img.shields.io/badge/parameter-optional-green?style=flat-square)
 
-Azure Firewall Tier associated with the Firewall to deploy. Default: Standard
+Azure Firewall Tier associated with the Firewall to deploy. Default: Standard 
 
 - Default value: `Standard`
 
@@ -266,7 +266,7 @@ outPrivateDnsZones | array |
             "value": "[resourceGroup().location]"
         },
         "parCompanyPrefix": {
-            "value": "eg-test"
+            "value": "alz"
         },
         "parVirtualHubAddressPrefix": {
             "value": "10.100.0.0/23"

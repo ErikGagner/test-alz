@@ -310,7 +310,7 @@ outHubVirtualNetworkId | string |
             "value": "[resourceGroup().location]"
         },
         "parCompanyPrefix": {
-            "value": "eg-test"
+            "value": "alz"
         },
         "parHubNetworkName": {
             "value": "[format('{0}-hub-{1}', parameters('parCompanyPrefix'), parameters('parLocation'))]"

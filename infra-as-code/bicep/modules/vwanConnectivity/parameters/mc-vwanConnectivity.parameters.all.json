@@ -6,7 +6,7 @@
       "value": "chinaeast2"
     },
     "parCompanyPrefix": {
-      "value": "alz"
+      "value": "eg-test"
     },
     "parVirtualHubAddressPrefix": {
       "value": "10.100.0.0/23"

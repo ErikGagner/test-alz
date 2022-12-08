@@ -20,7 +20,7 @@
                     "value": "security_contact@replace_me"
                 },
                 "logAnalytics": {
-                    "value": "alz-log-analytics"
+                    "value": "eg-log-analytics"
                 },
                 "ascExportResourceGroupName": {
                     "value": "alz-asc-export"

@@ -132,7 +132,7 @@ outAutomationAccountId | string |
     },
     "parameters": {
         "parLogAnalyticsWorkspaceName": {
-            "value": "alz-log-analytics"
+            "value": "eg-log-analytics"
         },
         "parLogAnalyticsWorkspaceLocation": {
             "value": "[resourceGroup().location]"

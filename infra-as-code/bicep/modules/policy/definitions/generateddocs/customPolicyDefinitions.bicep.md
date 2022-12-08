@@ -38,7 +38,7 @@ Set Parameter to true to Opt-out of deployment telemetry
     },
     "parameters": {
         "parTargetManagementGroupId": {
-            "value": "eg-test"
+            "value": "alz"
         },
         "parTelemetryOptOut": {
             "value": false

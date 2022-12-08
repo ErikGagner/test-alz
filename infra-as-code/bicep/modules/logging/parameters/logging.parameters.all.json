@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLogAnalyticsWorkspaceName": {
-      "value": "alz-log-analytics"
+      "value": "eg-log-analytics"
     },
     "parLogAnalyticsWorkspaceLocation": {
       "value": "eastus"
@@ -21,7 +21,6 @@
         "AzureActivity",
         "ChangeTracking",
         "Security",
-        "SecurityInsights",
         "ServiceMap",
         "SQLAdvancedThreatProtection",
         "SQLVulnerabilityAssessment",

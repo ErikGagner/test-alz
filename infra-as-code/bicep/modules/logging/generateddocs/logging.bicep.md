@@ -132,7 +132,7 @@ outAutomationAccountId | string |
     },
     "parameters": {
         "parLogAnalyticsWorkspaceName": {
-            "value": "alz-log-analytics"
+            "value": "eg-log-analytics"
         },
         "parLogAnalyticsWorkspaceLocation": {
             "value": "[resourceGroup().location]"
@@ -150,7 +150,6 @@ outAutomationAccountId | string |
                 "AzureActivity",
                 "ChangeTracking",
                 "Security",
-                "SecurityInsights",
                 "ServiceMap",
                 "SQLAdvancedThreatProtection",
                 "SQLVulnerabilityAssessment",

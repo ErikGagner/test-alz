@@ -31,7 +31,6 @@ param parLogAnalyticsWorkspaceLogRetentionInDays int = 365
   'AzureActivity'
   'ChangeTracking'
   'Security'
-  'SecurityInsights'
   'ServiceMap'
   'SQLAdvancedThreatProtection'
   'SQLVulnerabilityAssessment'
@@ -39,14 +38,13 @@ param parLogAnalyticsWorkspaceLogRetentionInDays int = 365
   'Updates'
   'VMInsights'
 ])
-@sys.description('Solutions that will be added to the Log Analytics Workspace. Default: [AgentHealthAssessment, AntiMalware, AzureActivity, ChangeTracking, Security, SecurityInsights, ServiceMap, SQLAssessment, Updates, VMInsights]')
+@sys.description('Solutions that will be added to the Log Analytics Workspace. Default: [AgentHealthAssessment, AntiMalware, AzureActivity, ChangeTracking, Security, ServiceMap, SQLAssessment, Updates, VMInsights]')
 param parLogAnalyticsWorkspaceSolutions array = [
   'AgentHealthAssessment'
   'AntiMalware'
   'AzureActivity'
   'ChangeTracking'
   'Security'
-  'SecurityInsights'
   'ServiceMap'
   'SQLAdvancedThreatProtection'
   'SQLVulnerabilityAssessment'

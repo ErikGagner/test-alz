@@ -7,8 +7,8 @@ env:
   ManagementGroupPrefix: "eg-test"
   TopLevelManagementGroupDisplayName: "EG-Azure Landing Zones"
   Location: "westeurope"
-  LoggingSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-  LoggingResourceGroupName: "alz-logging"
+  LoggingSubId: "31122448-1ee9-458a-b2cb-cbcd91403fa0"
+  LoggingResourceGroupName: "eg-alz-logging"
   HubNetworkSubId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   HubNetworkResourceGroupName: "Hub_Networking_POC"
   RoleAssignmentManagementGroupId: "alz-platform"
@@ -59,28 +59,28 @@ jobs:
           deploymentName: create_rbac_roles-${{ env.runNumber }}
           failOnStdErr: false
 
-      # - name: Deploy Logging Resource Group
-      #   id: create_logging_rg
-      #   uses: azure/arm-deploy@v1
-      #   with:
-      #     scope: subscription
-      #     subscriptionId: ${{ env.LoggingSubId }}
-      #     region: ${{ env.Location }}
-      #     template: infra-as-code/bicep/modules/resourceGroup/resourceGroup.bicep
-      #     parameters: parResourceGroupName=${{ env.LoggingResourceGroupName }} parLocation=${{ env.Location }}
-      #     deploymentName: create_logging_rg-${{ env.runNumber }}
-      #     failOnStdErr: false
+      - name: Deploy Logging Resource Group
+        id: create_logging_rg
+        uses: azure/arm-deploy@v1
+        with:
+          scope: subscription
+          subscriptionId: ${{ env.LoggingSubId }}
+          region: ${{ env.Location }}
+          template: infra-as-code/bicep/modules/resourceGroup/resourceGroup.bicep
+          parameters: parResourceGroupName=${{ env.LoggingResourceGroupName }} parLocation=${{ env.Location }}
+          deploymentName: create_logging_rg-${{ env.runNumber }}
+          failOnStdErr: false
 
-      # - name: Deploy Logging
-      #   id: create_logging
-      #   uses: azure/arm-deploy@v1
-      #   with:
-      #     subscriptionId: ${{ env.LoggingSubId }}
-      #     resourceGroupName: ${{ env.LoggingResourceGroupName }}
-      #     template: infra-as-code/bicep/modules/logging/logging.bicep
-      #     parameters: infra-as-code/bicep/modules/logging/parameters/logging.parameters.all.json
-      #     deploymentName: create_logging-${{ env.runNumber }}
-      #     failOnStdErr: false
+      - name: Deploy Logging
+        id: create_logging
+        uses: azure/arm-deploy@v1
+        with:
+          subscriptionId: ${{ env.LoggingSubId }}
+          resourceGroupName: ${{ env.LoggingResourceGroupName }}
+          template: infra-as-code/bicep/modules/logging/logging.bicep
+          parameters: infra-as-code/bicep/modules/logging/parameters/logging.parameters.all.json
+          deploymentName: create_logging-${{ env.runNumber }}
+          failOnStdErr: false
 
       # - name: Deploy Hub Networking Resource Group
       #   id: create_hub_network_rg
